@@ -11,4 +11,14 @@ def maxProfit(prices, n):
         elif (prices[i] - buy > max_profit):
             max_profit = prices[i] - buy;
     return max_profit;
+
+
+## Driver code
+if __name__=='__main__':
+ 
+    prices = [ 7, 1, 5, 6, 4 ];
+    n = len(prices)
+    max_profit = maxProfit(prices, n)
+print(max_profit)
+
  
